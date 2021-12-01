@@ -1,0 +1,218 @@
+*{
+    font-family: 'Times New Roman', Times, serif;
+    cursor: context-menu;
+    text-decoration: none;
+    color: white;
+}
+
+.container{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: url("https://wallpaper.dog/large/5516994.jpg");
+    overflow: hidden;
+    background-repeat: no-repeat;
+    z-index: -2;
+}
+
+.container::after{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: black;
+    opacity: .4;
+    z-index: -1;
+}
+
+.main-contain{
+    display: block;
+    position: fixed;
+    top: 25%;
+    left: 25%;
+    width: 50%;
+    height: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.main{
+    width: 200px;
+    height: 200px;
+    border: 2px solid white;
+    border-radius: 50%;
+    display: grid;
+    place-items: center;
+    font-size: 35px;
+    opacity: 0;
+    color: white;
+    transition-duration: .3s;
+    transition-timing-function: linear;
+    animation: start 1s linear 2.2s 1;
+    animation-fill-mode: forwards;
+}
+
+@keyframes start {
+    100%{
+        opacity: 1;
+    }
+}
+
+.main:hover{
+    padding: 10px;
+}
+
+.sec{
+    height: 0px;
+    width: 0px;
+    font-size: 0px;
+    color: white;
+    display: grid;
+    place-items: center;
+    letter-spacing: 2px;
+    border: 0px solid white;
+    border-radius: 50%;
+    opacity: 0;
+    transition-duration: .4s;
+    transition-timing-function: linear;
+}
+
+.sec:hover{
+    padding: 10px;
+    transform: translate(-110px, -110px);
+}
+
+.sec1{
+    position: fixed;
+    top: 32%;
+    left: 30%;
+}
+
+.sec2{
+    position: fixed;
+    top: 55%;
+    left: 67%;
+}
+
+.sec3{
+    position: fixed;
+    top: 70%;
+    left: 35%;
+}
+
+.appear{
+    font-size: 40px;
+    border: 2px solid white;
+    height: 200px;
+    width: 200px;
+    opacity: 1;
+    transform: translate(-100px, -100px);
+}
+
+.gone{
+    font-size: 0;
+    height: 0;
+    width: 0;
+    border: 0px solid white;
+}
+
+.menu{
+    display: inline-block;
+    line-height: 40px;
+    color: white;
+    padding-left: 5px;
+    opacity: 0;
+    transform: translateX(-30px);
+    animation: start1 1s linear 3.2s 1;
+    animation-fill-mode: forwards;
+}
+
+@keyframes start1 {
+    100%{
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+.mainmenu{
+    font-weight: 600;
+    transition-duration: .2s;
+}
+
+.mainmenu:hover{
+    font-size: 18px;
+}
+
+.micon, .micon1, .micon2{
+    font-size: 0;
+    transition-duration: .2s;
+}
+
+.audio{
+    background-color: transparent;
+    color: white;
+    font-size: 15px;
+    font-family: 'Times New Roman', Times, serif;
+    padding: 0;
+    border: none;
+}
+
+.home{
+    background-color: transparent;
+    color: white;
+    font-size: 15px;
+    font-family: 'Times New Roman', Times, serif;
+    padding: 0px;
+    border: none;
+}
+
+.mitems1{
+    font-size: 0;
+    opacity: 0;
+    transition-duration: .5s;
+}
+
+.mitems1:hover{
+    font-weight: 600;
+}
+
+.mitems2{
+    font-size: 0;
+    opacity: 0;
+    transition-duration: .5s;
+}
+
+.mitems2:hover{
+    font-weight: 600;
+}
+
+.appear2{
+    font-size: 15px;
+    opacity: 1;
+}
+
+.Arika{
+    position: absolute;
+    top: 45%;
+    left: 45%;
+    font-size: 50px;
+    opacity: 0;
+    animation: arika 2s ease-in-out .2s 1;
+    animation-fill-mode: forwards;
+}
+
+@keyframes arika{
+    40%{
+        opacity: 1;
+        transform: translateY(0);
+    }
+    100%{
+        opacity: 1;
+        transform: translateY(-550%);
+    }
+}
