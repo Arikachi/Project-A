@@ -9,7 +9,7 @@ main.addEventListener("click", function(){
         sec1.classList.add("appear");
         sec2.classList.add("appear");
         sec3.classList.add("appear");
-    }, 1000);
+    }, 500);
 });
 
 var plage = document.getElementById("plage");
@@ -32,7 +32,7 @@ icon1 = document.querySelector(".micon1");
 icon2 = document.querySelector(".micon2");
 items1 = document.querySelector(".mitems1");
 items2 = document.querySelector(".mitems2");
-console.log(icon2);
+arika = document.querySelector(".Arika");
 
 menu.addEventListener("mouseover", function(){
     icon.classList.add("appear2");
@@ -71,5 +71,37 @@ items2.addEventListener("click", function(){
     sec3.classList.remove("appear");
     setTimeout(function(){
         main.classList.remove("gone");
-    }, 1000);
+    }, 500);
 })
+
+arika.addEventListener("click", function(){
+    sec1.classList.remove("appear");
+    sec2.classList.remove("appear");
+    sec3.classList.remove("appear");
+    setTimeout(function(){
+        main.classList.remove("gone");
+    }, 500);
+})
+
+sec1 = document.querySelector(".sec1");
+sec2 = document.querySelector(".sec2");
+sec3 = document.querySelector(".sec3");
+console.log(sec1);
+
+sec1.addEventListener("click", function(){
+        sec1.classList.remove("appear");
+        sec2.classList.remove("appear");
+        sec3.classList.remove("appear");
+});
+
+sec2.addEventListener("click", function(){
+    sec1.classList.remove("appear");
+    sec2.classList.remove("appear");
+    sec3.classList.remove("appear");
+});
+
+sec3.addEventListener("click", function(){
+    sec1.classList.remove("appear");
+    sec2.classList.remove("appear");
+    sec3.classList.remove("appear");
+});
